@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  plot-aif:
+    image: plot-aif:latest
+    container_name: plot-aif
+    ports:
+      - "5001:5000"
+    restart: unless-stopped
