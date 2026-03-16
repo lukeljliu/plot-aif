@@ -532,7 +532,7 @@ def generate_plot():
             metadata = file_data.get('metadata', {})
             sample_id = metadata.get('adsnt_sample_id', name)
             material_id = metadata.get('adsnt_material_id', '')
-            adsorptive = metadata.get('adsorptive', 'N₂')
+            adsorptive = metadata.get('exptl_adsorptive', 'unknown gas')
             # Clean up adsorptive (remove "1: " prefix if present)
             if adsorptive.startswith('1: '):
                 adsorptive = adsorptive[3:]
