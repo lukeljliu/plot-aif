@@ -590,7 +590,7 @@ def generate_plot():
         ax.set_ylim(bottom=0)
 
         # Legend
-        ax.legend(loc='lower right', fontsize=10, ncol=2)
+        ax.legend(loc='best', fontsize=10, ncol=2)
 
         # Tick label size
         ax.tick_params(axis='both', labelsize=11)
